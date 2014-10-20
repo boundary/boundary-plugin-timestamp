@@ -3,42 +3,23 @@
     "command": "python timestamp.py",
     "icon" : "icon.png",
     "metrics" : [
-        "BOUNDARY_TIMESTAMP_METRIC"
+                 "BOUNDARY_TIMESTAMP_METRIC"
+                ],
 
-    "dashboards" : [{"name" : "Timestamp",
-        "layout" : 
-"d-w=4&d-h=4&d-pad=5&d-bg=none&d-g-AWS_EC2_NETWORK_IN=2-0-1-2-t&d-g-AWS_EC2_NETWORK_OUT=2-0-1-2-b&d-g-AWS_EC2_DISK_READ_BYTES=0-2-1-2-t&d-g-AWS_EC2_DISK_WRITE_BYTES=0-2-1-2-b&d-g-AWS_EC2_DISK_READ_OPS=1-2-1-2-t&d-g-AWS_EC2_DISK_WRITE_OPS=1-2-1-2-b&d-g-AWS_EC2_STATUS_CHECK_FAILED=3-0-1-1&d-g-AWS_EC2_STATUS_CHECK_FAILED_INSTANCE=3-1-1-1&d-g-AWS_EC2_STATUS_CHECK_FAILED_SYSTEM=3-2-1-1&d-g-AWS_EC2_CPU_CREDIT_BALANCE=2-2-1-1&d-g-AWS_EC2_CPU_CREDIT_USAGE=2-3-1-1&d-g-AWS_EC2_CPU_UTILIZATION=0-0-2-2" }],
+    "dashboards" : [
+                    {
+                    "name" : "Timestamp",
+                    "layout" : "d-w=1&d-h=1&d-pad=5&d-bg=none&d-g-BOUNDARY_TIMESTAMP_METRIC=0-0-1-1" 
+                   ],
 
     "paramSchema": [
         {
-            "title": "AWS Access Key Id",
-            "name": "access_key_id",
-            "description": "Access Key for AWS",
+            "title": "Poll Interval",
+            "name": "pollInterval",
+            "description": "Interval at which to output a metric",
             "type": "string",
-            "default": "",
+            "default": "5",
             "required": true
-        },
-        {
-            "title": "AWS Secret Key",
-            "name": "secret_key",
-            "description": "Secret Key for AWS",
-            "type": "string",
-            "default": "",
-            "required": true
-        }
-    ]
-}
-
-{
-    "result": [
-        {
-            "defaultAggregate": "AVG",
-            "defaultResolutionMS": 1000,
-            "description": "Example plugin that uses timestamps"
-            "displayName": "Timestamp Metric",
-            "displayNameShort": "Timestamp Metric",
-            "isDisabled": 0,
-            "unit": "number"
         }
     ]
 }
