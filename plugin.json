@@ -17,9 +17,9 @@
         {
             "title": "Poll Interval",
             "name": "pollInterval",
-            "description": "Interval at which to output a metric",
+            "description": "Interval at which to output a metric (millseconds)",
             "type": "string",
-            "default": "5",
+            "default": "5000",
             "required": true
         }
     ]

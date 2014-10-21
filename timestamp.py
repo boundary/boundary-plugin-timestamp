@@ -23,7 +23,7 @@ class Timestamp():
     '''
     with open('param.json') as f:
       parameters = json.loads(f.read())
-      self.pollInterval = float(parameters['pollInterval'])
+      self.pollInterval = float(parameters['pollInterval'])/1000.0
 
   def run(self):
     '''
