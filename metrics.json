@@ -2,7 +2,7 @@
     "result": [
         {
             "defaultAggregate": "AVG",
-            "defaultResolutionMS": 5000,
+            "defaultResolutionMS": null,
             "description": "Example plugin that uses timestamps",
             "displayName": "Timestamp Metric",
             "displayNameShort": "Timestamp Metric",
