@@ -32,7 +32,7 @@ class Timestamp():
     '''
     while True:
       print("{0} {1} {2} {3}".format("BOUNDARY_TIMESTAMP_METRIC",str(random.randrange(0,99)),self.hostname,str(int(time.time()))))
-      sys.stdout.flush()
+#      sys.stdout.flush()
       time.sleep(float(self.pollInterval))
 
 if __name__ == "__main__":

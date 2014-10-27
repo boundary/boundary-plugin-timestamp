@@ -1,6 +1,6 @@
 {
     "description": "Example plugin that uses timestamps",
-    "command": "python timestamp.py",
+    "command": "python -u timestamp.py",
     "icon" : "icon.png",
     "metrics" : [
                  "BOUNDARY_TIMESTAMP_METRIC"
