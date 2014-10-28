@@ -31,7 +31,7 @@ class Timestamp():
     Outputs a random metric value at a give duration specified by the poll interval
     '''
     while True:
-      print("{0} {1} {2} {3}".format("BOUNDARY_TIMESTAMP_METRIC",str(random.randrange(0,99)),self.hostname,str(int(time.time()))))
+      print("{0} {1} {2} {3}".format("BOUNDARY_TIMESTAMP_METRIC",str(random.randrange(0,99)),self.hostname,str(int(time.time()*1000))))
       sys.stdout.flush()
       time.sleep(float(self.pollInterval))
 
