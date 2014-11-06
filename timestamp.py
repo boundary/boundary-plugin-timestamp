@@ -36,6 +36,9 @@ class Timestamp():
       time.sleep(float(self.pollInterval))
 
 if __name__ == "__main__":
+  # Timestamp instance
   t = Timestamp()
+  # Load configuration
   t.get_configuration()
+  # execute plugin
   t.run()
