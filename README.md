@@ -9,3 +9,6 @@ Metrics
 |:---------------|:--------------------------|:----------------------------------|
 |Timestamp Metric|BOUNDARY\_TIMESTAMP\_METRIC|Example plugin that uses timestamps|
 
+Dashboards
+----------
+
