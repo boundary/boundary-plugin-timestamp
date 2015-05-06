@@ -1,14 +1,10 @@
 {
-    "result": [
-        {
-            "defaultAggregate": "AVG",
-            "defaultResolutionMS": null,
-            "description": "Example plugin that uses timestamps",
-            "displayName": "Timestamp Metric",
-            "displayNameShort": "Timestamp Metric",
-            "isDisabled": 0,
-            "name": "BOUNDARY_TIMESTAMP_METRIC",
-            "unit": "number"
-        }
-    ]
+  "BOUNDARY_TIMESTAMP_METRIC": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Example plugin that uses timestamps",
+    "displayName": "Timestamp Metric",
+    "displayNameShort": "Timestamp Metric",
+    "unit": "number"
+  }
 }
